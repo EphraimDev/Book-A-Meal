@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Add, Modify and Delete Meal</title>
+    <link rel="stylesheet" type="text/css" href="modify-menu.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>Book-A-Meal</header>
+        <nav>
+            <ul class="left">
+                <a href="see-menu.html">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>About</li>
+                </a>
+                <a href="#">
+                    <li>Gallery</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+                <a class="right" href="signIn.html">
+                    <li>Sign In</li>
+                </a>
+            </ul>
+
+            <div class="handle">Menu</div>
+        </nav>
+        <div class="main">
+            <h1 class="header">Modify menu</h1>
+            <form action="#" method="post" class="form-box">
+                <label for="name">Select meal</label>
+                <div class="inp-row">
+                    <input list="browsers" name="" /></label>
+                    <datalist id="browsers">
+                                  <option value="Jollof rice">
+                                  <option value="Fried rice">
+                                  <option value="Semo and vegetable">
+                                  <option value="Beans">
+                                  <option value="Spaghetti">
+                                  <option value="Yam and egg">
+                                </datalist>
+                </div>
+
+                <input type="submit" class="sub-btn" name="submit" value="Add"><br>
+                <input type="submit" class="sub-btn" name="submit" value="Modify"><br>
+                <input type="submit" class="sub-btn" name="submit" value="Delete">
+            </form>
+        </div>
+
+    </div>
+    </div>
+
+    <script>
+        $('.handle').on('click', function() {
+            $('nav ul').toggleClass('showing');
+        })
+    </script>
+
+</body>
+
+</html>

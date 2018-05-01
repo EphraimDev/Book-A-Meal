@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>See Menu</title>
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="index.js"></script>
+</head>
+
+<body>
+    <div>
+        <header>Book-A-Meal</header>
+        <nav>
+            <div>
+                <ul>
+                    <a href="index.html">
+                        <li>Home</li>
+                    </a>
+                    <a href="see-menu.html">
+                        <li>Meal</li>
+                    </a>
+                    <a class="right" href="signIn.html">
+                        <li>Sign In</li>
+                    </a>
+
+                </ul>
+            </div>
+
+            <div class="handle">Menu</div>
+        </nav>
+
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+            <img class="image" src="pics.jpg">
+
+        </div>
+
+        <div class="mySlides fade">
+            <img src="pic-2.jpg">
+
+        </div>
+
+        <div class="mySlides fade">
+            <img src="pic-3.jpg">
+
+        </div>
+
+        <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="next" onclick="plusSlides(1)">&#10095;</a>
+
+    </div>
+    <br>
+
+    <div style="text-align:center">
+        <span class="dot" onclick="currentSlide(1)"></span>
+        <span class="dot" onclick="currentSlide(2)"></span>
+        <span class="dot" onclick="currentSlide(3)"></span>
+    </div>
+
+
+    <script>
+        $('.handle').on('click', function() {
+            $('nav ul').toggleClass('showing');
+        })
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("dot");
+            if (n > slides.length) {
+                slideIndex = 1
+            }
+            if (n < 1) {
+                slideIndex = slides.length
+            }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+        }
+    </script>
+
+</body>
+
+</html>
