@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="signUp.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <div class="container">
+        <header>Book-A-Meal</header>
+        <nav>
+            <ul class="left">
+                <a href="see-menu.html">
+                    <li>Home</li>
+                </a>
+                <a href="#">
+                    <li>About</li>
+                </a>
+                <a href="#">
+                    <li>Gallery</li>
+                </a>
+                <a href="#">
+                    <li>Contact</li>
+                </a>
+                <a class="right" href="signIn.html">
+                    <li>Sign In</li>
+                </a>
+            </ul>
+            <div class="handle">Menu</div>
+        </nav>
+        <div class="main">
+            <h1 class="header">Sign Up For Free</h1>
+            <form action="#" method="post" class="form-box">
+                <label for="name">First Name</label>
+                <div class="inp-row">
+                    <input class="inp" type="text" name="name" placeholder="Enter First Name" required>
+                </div>
+                <label for="name">Last Name</label>
+                <div class="inp-row">
+                    <input class="inp" type="text" name="name" placeholder="Enter Last Name" required>
+                </div>
+                <label for="number">Phone Number</label>
+                <div class="inp-row">
+                    <input class="inp" type="number" name="number" placeholder="Enter Phone Number" required>
+                </div>
+                <label for="email">Email</label>
+                <div class="inp-row">
+                    <input class="inp" type="email" name="email" placeholder="Enter Email" required>
+                </div>
+                <label for="password">Password</label>
+                <div class="inp-row">
+                    <input class="inp" type="password" name="password" placeholder="Enter Password" required>
+                </div>
+                <label for="repass">Confirm your password</label>
+                <div class="inp-row">
+                    <input class="inp" type="password" name="password" placeholder="Enter password" required>
+                </div>
+                <div class="inp-row">
+                    <input type="checkbox" class="agree"><label class="agree" for="agree">I agree with the terms and conditions</label>
+                </div>
+                <input type="submit" class="sub-btn" name="submit" value="Sign In">
+            </form>
+        </div>
+        
+    </div>
+    </div>
+
+    <script>
+        $('.handle').on('click', function() {
+            $('nav ul').toggleClass('showing');
+        })
+    </script>
+
+</body>
+
+</html>
