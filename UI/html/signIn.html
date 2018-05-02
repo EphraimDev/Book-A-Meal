@@ -6,52 +6,44 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
     <title>Sign In</title>
-    <link rel="stylesheet" type="text/css" href="signIn.css">
+    <link rel="stylesheet" type="text/css" href="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\css\signIn.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+    <script src="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\js\register.js"></script>
 </head>
 
 <body>
-    <div class="container">
-        <header>Book-A-Meal</header>
+    <div>
+        <header><a href="index.html">Book a meal</a></header>
         <nav>
             <ul class="left">
-                <a href="see-menu.html">
+                <a href="index.html">
                     <li>Home</li>
                 </a>
-                <a href="#">
-                    <li>About</li>
-                </a>
-                <a href="#">
-                    <li>Gallery</li>
-                </a>
-                <a href="#">
-                    <li>Contact</li>
-                </a>
                 <a class="right" href="signIn.html">
-                    <li>Sign In</li>
+                    <li>Register</li>
                 </a>
             </ul>
 
             <div class="handle">Menu</div>
         </nav>
-        <div class="main">
-            <h1 class="header">Login to place an order</h1>
-            <form action="#" method="post" class="form-box">
-                <label for="email">Email</label>
-                <div class="inp-row">
-                    <input class="inp" type="email" name="email" placeholder="Enter Email">
-                </div>
-                <label for="password">Password</label>
-                <div class="inp-row">
-                    <input class="inp" type="password" name="password" placeholder="Enter Password">
-                </div>
-                <input type="submit" class="sub-btn" name="submit" value="Sign In"><br>
-                <a href="signUp.html"><input type="submit" class="new-btn" name="submit" value="No account? Click here"></a>
 
-        </div>
+    </div>
+    <div class="main">
+        <h1 class="header">Login to place your order</h1>
+        <form action="#" method="post" class="form-box">
+            <label for="email">Email</label>
+            <div class="inp-row">
+                <input class="inp" type="email" name="email" placeholder="Enter Email" required>
+            </div>
+            <label for="password">Password</label>
+            <div class="inp-row">
+                <input class="inp" type="password" name="password" placeholder="Enter Password" required>
+            </div>
+            <input type="submit" class="sub-btn" name="submit" value="Log in"><br>
+            <a class="sign-btn" href="signUp.html">Don't have an account? Click here</a>
         </form>
     </div>
-    </div>
+
 
     <script>
         $('.handle').on('click', function() {

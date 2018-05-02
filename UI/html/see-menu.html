@@ -3,96 +3,74 @@
 
 <head>
     <meta charset="utf-8">
-    <title>See Menu</title>
-    <link rel="stylesheet" type="text/css" href="see-menu.css">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Book a meal</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\css\index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="see-menu.js"></script>
+    <script src="./js/index.js"></script>
 </head>
 
 <body>
-    <div>
-        <header>Book-A-Meal</header>
+    <div class="con">
+        <header><a href="see-menu.html">Book a meal</a></header>
         <nav>
             <ul>
                 <a href="see-menu.html">
                     <li>Home</li>
                 </a>
-                <a href="#">
-                    <li>About</li>
+                <a href="orders.html">
+                    <li>My orders</li>
                 </a>
-                <a href="#">
-                    <li>Gallery</li>
-                </a>
-                <a href="#">
-                    <li>Contact</li>
-                </a>
-                <a class="right" href="signIn.html">
-                    <li>Sign In</li>
+                <a href="contact.html">
+                    <li>Contact Us</li>
                 </a>
             </ul>
 
             <div class="handle">Menu</div>
         </nav>
 
-        <div class="container">
-            <div class="row">
-                <div class="col">
-                    <p>Jollof rice and beans with fried fish</p>
-                    <p>A bottle of any soft drink </p>
-                    <button class="btn-jollof">Click to order</button>
+    </div>
+
+    <div>
+        <div class="col">
+            <div class="card">
+                <img src="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\images\fried-2509080_1280.jpg" alt="Fried rice and chicken">
+                <div class="container">
+                    <h4><b>Fried rice and chicken</b></h4>
+                    <p class="price"><span>&#8358</span>800</p>
                 </div>
-                <div class="col">
-                    <p>Eba and vegetable</p>
-                    <p>A bottle of any soft drink </p>
-                    <button class="eba">Click to order</button>
-                </div>
-                <div class="col">
-                    <p>Beans and yam</p>
-                    <p>A bottle of any soft drink </p>
-                    <button class="btn-beans">Click to order</button>
+                <div>
+                    <button class="btn"><a href="checkout.html">Order now</a></button>
                 </div>
             </div>
-            <div class="row">
-                <div class="col">
-                    <p>Pounded yam and egusi soup</p>
-                    <p>A bottle of any soft drink </p>
-                    <button class="btn-pounded">Click to order</button>
+            <div class="card">
+                <img src="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\images\okrosoup.jpg" alt="Eba and okro soup with beef">
+                <div class="container">
+                    <h4><b>Eba and okro soup</b></h4>
+                    <p class="price"><span>&#8358</span>1000</p>
                 </div>
-                <div class="col">
-                    <p>Ofada rice and dodo with turkey</p>
-                    <p>A bottle of any soft drink </p>
-                    <button class="btn-ofada">Click to order</button>
-                </div>
-                <div class="col">
-                    <p>Fried rice and chicken </p>
-                    <p>A bottle of any soft drink </p>
-                    <button class="btn-fried">Click to order</button>
+                <div>
+                    <button class="btn"><a href="checkout.html">Order now</a></button>
                 </div>
             </div>
-        </div>
-        <div class="main" hidden>
-            <h1 class="header">Confirm your order</h1>
-            <form action="#" method="post" class="form-box">
-                <label for="name">Full Name</label>
-                <div class="inp-row">
-                    <input id="name" class="inp" type="text" name="name" placeholder="" required>
+            <div class="card">
+                <img src="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\images\porridge-beans.jpg" alt="Beans and plantain">
+                <div class="container">
+                    <h4><b>Beans and plantain</b></h4>
+                    <p class="price"><span>&#8358</span>500</p>
                 </div>
-                <label for="number">Phone Number</label>
-                <div class="inp-row">
-                    <input id="phone" class="inp" type="number" name="number" placeholder="">
+                <div>
+                    <button class="btn"><a href="checkout.html">Order now</a></button>
                 </div>
-                <label for="email">Email</label>
-                <div class="inp-row">
-                    <input id="email" class="inp" type="email" name="email" placeholder="Enter Email">
-                </div>
-                <label for="meal">Meal</label>
-                <div class="inp-row">
-                    <input id="meal" class="inp" type="text" name="meal" placeholder="">
-                </div>
-                <input type="submit" class="sub-btn" name="submit" value="Submit">
-            </form>
+            </div>
         </div>
     </div>
+
+
+    <footer>
+
+    </footer>
 
     <script>
         $('.handle').on('click', function() {

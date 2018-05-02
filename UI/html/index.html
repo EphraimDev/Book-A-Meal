@@ -5,21 +5,21 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Home Page</title>
+    <title>Book a meal</title>
     <link rel="stylesheet" type="text/css" href="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\css\index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
     <script src="./js/index.js"></script>
 </head>
 
 <body>
-    <div>
+    <div class="con">
         <header><a href="index.html">Book a meal</a></header>
         <nav>
-            <ul class="left">
+            <ul>
                 <a href="index.html">
                     <li>Home</li>
                 </a>
-                <a class="right" href="signIn.html">
+                <a href="signIn.html">
                     <li>Register</li>
                 </a>
             </ul>
@@ -29,34 +29,45 @@
 
     </div>
 
-    <div class="container">
+    <div>
         <div class="col">
-            <div class="card row-1">
-                <img src="img_avatar2.png" alt="Avatar" style="width:100%">
+            <div class="card">
+                <img src="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\images\fried-2509080_1280.jpg" alt="Fried rice and chicken">
                 <div class="container">
-                    <h4><b>Jane Doe</b></h4>
-                    <p>Interior Designer</p>
+                    <h4><b>Fried rice and chicken</b></h4>
+                    <p class="price"><span>&#8358</span>800</p>
+                </div>
+                <div>
+                    <button class="btn"><a href="checkout.html">Order now</a></button>
                 </div>
             </div>
-            <div class="card row-2">
-                <img src="img_avatar2.png" alt="Avatar" style="width:100%">
+            <div class="card">
+                <img src="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\images\okrosoup.jpg" alt="Eba and okro soup with beef" style="width:100%">
                 <div class="container">
-                    <h4><b>Jane Doe</b></h4>
-                    <p>Interior Designer</p>
+                    <h4><b>Eba and okro soup</b></h4>
+                    <p class="price"><span>&#8358</span>1000</p>
+                </div>
+                <div>
+                    <button class="btn"><a href="checkout.html">Order now</a></button>
                 </div>
             </div>
-            <div class="card row-3">
-                <img src="img_avatar2.png" alt="Avatar" style="width:100%">
+            <div class="card">
+                <img src="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\images\porridge-beans.jpg" alt="Beans and plantain" style="width:100%">
                 <div class="container">
-                    <h4><b>Jane Doe</b></h4>
-                    <p>Interior Designer</p>
+                    <h4><b>Beans and plantain</b></h4>
+                    <p class="price"><span>&#8358</span>500</p>
+                </div>
+                <div>
+                    <button class="btn"><a href="checkout.html">Order now</a></button>
                 </div>
             </div>
         </div>
     </div>
 
 
+    <footer>
 
+    </footer>
 
     <script>
         $('.handle').on('click', function() {

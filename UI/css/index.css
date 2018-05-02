@@ -1,3 +1,7 @@
+* {
+    box-sizing: border-box
+}
+
 body {
     margin: 0;
     padding: 0;
@@ -5,9 +9,13 @@ body {
     font-family: sans-serif;
 }
 
+.con {
+    background-color: #43a286;
+}
+
 header {
-    background: #43a286;
     width: 100%;
+    background-color: #43a286;
     padding-left: 70px;
     padding-top: 10px;
     color: white;
@@ -24,7 +32,6 @@ a {
 }
 
 nav ul {
-    background-color: #43a286;
     overflow: hidden;
     color: white;
     padding: 0;
@@ -58,14 +65,22 @@ nav ul li:hover {
     display: none;
 }
 
-.container {
-    display: block;
+.col {
+    width: 900px;
+    margin: auto;
+    margin-top: 100px;
 }
 
 .card {
-    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.6);
     transition: 0.3s;
-    width: 33.33%;
+    width: 30%;
+    background: orange;
+    text-align: center;
+    font-size: 16px;
+    font-family: sans-serif;
+    float: left;
+    margin: 10px;
     border-radius: 5px;
 }
 
@@ -75,10 +90,23 @@ nav ul li:hover {
 
 img {
     border-radius: 5px 5px 0 0;
+    width: 100%;
 }
 
 .container {
     padding: 2px 16px;
+}
+
+.btn {
+    text-align: center;
+    border: none;
+    cursor: pointer;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    margin: 5px;
+    background: #43a286;
+    color: white;
+    font-weight: bold;
 }
 
 
@@ -97,12 +125,24 @@ img {
     .handle {
         display: block;
     }
-    .main {
+    .col {
+        width: 400px;
+    }
+    .card {
         width: 90%;
+    }
+    img {
+        width: 300px;
     }
 }
 
-@media screen and (max-width: 720px) {
+@media only screen and (max-width: 720px) {
+    header {
+        font-size: 15px;
+        padding-left: 0;
+        text-align: center;
+        padding-bottom: 0;
+    }
     nav ul {
         max-height: 0;
     }
@@ -112,13 +152,21 @@ img {
     nav ul li {
         box-sizing: border-box;
         width: 100%;
-        padding: 1opx;
+        padding: 10px;
         text-align: left;
     }
     .handle {
         display: block;
     }
-    .main {
-        width: 90%;
+    .col {
+        width: auto;
+        margin-top: 20px;
+        max-height: 300px;
+    }
+    .card {
+        width: auto;
+    }
+    img {
+        max-width: 200px;
     }
 }

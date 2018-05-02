@@ -43,12 +43,10 @@ nav ul li:hover {
     background-color: #399077;
 }
 
-section {
-    line-height: 1.5em;
-    font-size: 0.9em;
-    padding: 40px;
-    width: 75%;
-    margin: 0 auto;
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
 }
 
 .handle {

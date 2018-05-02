@@ -1,32 +1,40 @@
+* {
+    box-sizing: border-box
+}
+
 body {
     margin: 0;
     padding: 0;
-    background: url(restaurant.jpg) no-repeat center center fixed;
     background-size: cover;
     font-family: sans-serif;
 }
 
 header {
-    background: #00795f;
+    background: #43a286;
     width: 100%;
-    padding: 40px 0;
+    padding-left: 70px;
+    padding-top: 10px;
     color: white;
-    text-align: center;
-    font-size: 40px;
+    text-align: left;
+    font-size: 25px;
+    font-weight: bold;
+    font-style: italic;
 }
 
 a {
     text-decoration: none;
     color: inherit;
+    margin: 10px;
 }
 
 nav ul {
     background-color: #43a286;
     overflow: hidden;
     color: white;
-    padding: 0;
+    /*padding: 0;*/
     text-align: center;
     margin: 0;
+    font-weight: bold;
     -webkit-transition: max-height 0.4s;
     -ms-transition: max-height 0.4s;
     -moz-transition: max-height 0.4s;
@@ -36,24 +44,16 @@ nav ul {
 
 nav ul li {
     display: inline-block;
-    padding: 20px;
+    padding: 10px;
 }
 
 nav ul li:hover {
     background-color: #399077;
 }
 
-section {
-    line-height: 1.5em;
-    font-size: 0.9em;
-    padding: 40px;
-    width: 75%;
-    margin: 0 auto;
-}
-
 .handle {
     width: 100%;
-    background: #005c48;
+    background: #43a286;
     text-align: left;
     box-sizing: border-box;
     padding: 15px 10px;
@@ -62,46 +62,53 @@ section {
     display: none;
 }
 
+.sticky {
+    position: fixed;
+    top: 0;
+    width: 100%;
+}
+
 .main {
-    width: 300px;
-    background-color: #eee;
-    margin: 20px auto;
-    border-radius: 5px;
+    width: 600px;
+    margin: auto;
+    /*border-radius: 5px;
     border: 5px solid#888;
-    box-shadow: 0 0 10px #000;
+    box-shadow: 0 0 10px #000;*/
 }
 
 .header {
-    padding: 10px;
-    text-align: center;
-    background: linear-gradient(#191970, #4169e1);
-    color: #fff;
-    font-size: 15px;
-    text-shadow: 1px 1px 2px #000;
+    padding-top: 10px;
+    text-align: left;
+    color: black;
+    font-size: 20px;
+    /*text-shadow: 1px 1px 2px #000;*/
+    font-weight: bold;
 }
 
 .form-box {
     padding: 10px 25px 20px 25px;
+    width: 600px;
 }
 
-inp {
-    font-size: 15px;
+.inp {
+    font-size: 20px;
     width: 100%;
-    padding: 12px 12px 12px 50px;
+    padding: 10px;
     border: none;
     box-shadow: 0 0 2px 1px #444;
 }
 
 .inp:focus {
     outline: none;
-    box-shadow: 0 0 5px 1px #4169e1;
-    color: #191970;
+    box-shadow: 0 0 5px 1px #43a286;
+    color: black;
     font-weight: bold;
 }
 
 label {
-    font-size: 18px;
-    color: #191970;
+    font-size: 25px;
+    color: orange;
+    font-weight: bolder;
 }
 
 .agree {
@@ -113,31 +120,27 @@ label {
 }
 
 .sub-btn {
-    width: 30%;
-    padding: 5px;
-    font-size: 18px;
-    background: linear-gradient(#dc143c, #b22222);
-    cursor: pointer;
-    color: #fff;
+    text-align: center;
     border: none;
-    margin: 10px;
-}
-
-.sub-btn:hover {
-    background: linear-gradient(#b22222, #dc143c);
+    cursor: pointer;
+    padding: 0.6rem 1.2rem;
+    border-radius: 5px;
+    margin: 5px;
+    background: #43a286;
+    color: white;
+    font-weight: bold;
 }
 
 .sub-btn:focus {
     outline: none;
 }
 
-.new-btn {
+.sign-btn {
     width: 100%;
     padding: 5px;
     font-size: 18px;
-    background: linear-gradient(#dc143c, #b22222);
     cursor: pointer;
-    color: #fff;
+    color: black;
     border: none;
     margin: 10px;
 }
@@ -158,14 +161,19 @@ label {
     .main {
         width: 90%;
     }
+    .form-box {
+        width: auto;
+    }
 }
 
 @media screen and (max-width: 720px) {
     nav ul {
         max-height: 0;
+        width: 100%;
     }
     .showing {
         max-height: 20em;
+        width: 100%;
     }
     nav ul li {
         box-sizing: border-box;
@@ -177,6 +185,9 @@ label {
         display: block;
     }
     .main {
-        width: 90%;
+        width: 80%;
+    }
+    .form-box {
+        width: auto;
     }
 }
