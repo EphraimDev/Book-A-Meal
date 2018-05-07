@@ -38,5 +38,3 @@ Caterer can view order summary for specific day
 Getting Started
 
 Project is currently being built with the Project Management Tool, Pivotal Tracker. You can find the template at https://www.pivotaltracker.com/n/projects/2165891
-
-Template is hosted at https://ephraimdev.github.io/Book-A-Meal/
