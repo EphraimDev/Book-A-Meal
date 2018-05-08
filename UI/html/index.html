@@ -8,26 +8,20 @@
     <title>Book a meal</title>
     <link rel="stylesheet" type="text/css" href="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\css\index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
-    <script src="./js/index.js"></script>
 </head>
 
 <body>
-    <div class="con">
-        <header><a href="index.html">Book a meal</a></header>
+    <header>
         <nav>
-            <ul>
-                <a href="index.html">
-                    <li>Home</li>
-                </a>
-                <a href="signIn.html">
-                    <li>Register</li>
-                </a>
+            <ul class="topnav" id="nav-bar">
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Contact Us</a></li>
+                    <li class="topnav-right"><a href="sign-in.html">Login</a></li>
+                <li class="topnav-right"><a href="sign-up.html">Sign Up</a></li>
+                <li class="dropdown-icon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776</a></li>
             </ul>
-
-            <div class="handle">Menu</div>
         </nav>
-
-    </div>
+        </header>
 
     <div>
         <div class="col">
@@ -37,18 +31,12 @@
                     <h4><b>Fried rice and chicken</b></h4>
                     <p class="price"><span>&#8358</span>800</p>
                 </div>
-                <div>
-                    <button class="btn"><a href="checkout.html">Order now</a></button>
-                </div>
             </div>
             <div class="card">
                 <img src="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\images\okrosoup.jpg" alt="Eba and okro soup with beef" style="width:100%">
                 <div class="container">
                     <h4><b>Eba and okro soup</b></h4>
                     <p class="price"><span>&#8358</span>1000</p>
-                </div>
-                <div>
-                    <button class="btn"><a href="checkout.html">Order now</a></button>
                 </div>
             </div>
             <div class="card">
@@ -57,22 +45,28 @@
                     <h4><b>Beans and plantain</b></h4>
                     <p class="price"><span>&#8358</span>500</p>
                 </div>
-                <div>
-                    <button class="btn"><a href="checkout.html">Order now</a></button>
-                </div>
             </div>
         </div>
     </div>
-
-
-    <footer>
-
+    
+    <footer class="footsy">
+        <nav>
+            <ul class="bottom-nav">
+                <li class="footer-nav"><a href="caterer-sign-in.html">Caterer</a></li>
+            </ul>
+        </nav>
     </footer>
 
     <script>
-        $('.handle').on('click', function() {
-            $('nav ul').toggleClass('showing');
-        })
+        function dropdownMenu() {
+            let x = document.getElementById("nav-bar");
+            if (x.className === "topnav"){
+                x.className += " responsive";
+                /*change topnav to topnav.responsive*/
+            } else {
+                x.className = "topnav";
+            }
+        }
     </script>
 
 </body>

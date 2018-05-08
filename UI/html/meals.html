@@ -5,8 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Set Menu</title>
-    <link rel="stylesheet" type="text/css" href="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\css\index.css">
+    <title>Meals</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\EPHRAIM\Desktop\Book-A-Meal\UI\css\index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
@@ -24,24 +24,18 @@
         </header>
     
 <div class="main">
-            <h1 class="header">Set menu for today</h1>
+            <h1 class="header">Set meal</h1>
             <form action="#" method="post" class="form-box">
-                <label for="date">Select date</label>
-                <div class="inp-row">
-                    <input class="inp" type="date" name="date" placeholder="Date" required>
-                </div>
-                <label for="name">Select meal</label>
-                <div class="inp-row">
-                    <input list="meals" name="meal" class="inp"/>
-                    <datalist id="meals">
-                                  <option value="Jollof rice">
-                                  <option value="Fried rice">
-                                  <option value="Semo and vegetable">
-                                  <option value="Beans">
-                                  <option value="Spaghetti">
-                                  <option value="Yam and egg">
-                                </datalist>
-                </div>
+                <label for="meals">Type meal name</label>
+  <input class="inp" type="text" id="text" value="" />
+                <input type="button" id="button" class="sub-btn" name="submit" value="Log in" onclick="window.open('see-menu.html', target = '_self')">
+  <label><span class="result"></span></label>
+  <h4>Meal added</h4>
+  <ol id = "latestEntry">
+      <li>Fried rice and plantain with turkey</li>
+      <li>Amala and vegetable soup with goal meat</li>
+                </ol>
+                <p class ="len"></p>
                 <input type="button" class="sub-btn" name="submit" value="Submit" onclick="window.open('set-menu.html', target = '_self')">
             </form>
         </div>

@@ -2,31 +2,27 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
+    <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Sign In</title>
-    <link rel="stylesheet" type="text/css" href="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\css\signIn.css">
+    <title>Sign Up</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\css\index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
 
 <body>
-    <div>
-        <header><a href="index.html">Book a meal</a></header>
+    <header>
         <nav>
-            <ul class="left">
-                <a href="index.html">
-                    <li>Home</li>
-                </a>
-                <a class="right" href="signIn.html">
-                    <li>Register</li>
-                </a>
+            <ul class="topnav" id="nav-bar">
+                    <li><a href="index.html">Home</a></li>
+                <li><a href="index.html">Contact Us</a></li>
+                    <li class="topnav-right"><a href="signIn.html">Login</a></li>
+                <li class="topnav-right"><a href="signUp.html">Sign Up</a></li>
+                <li class="dropdown-icon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776</a></li>
             </ul>
-
-            <div class="handle">Menu</div>
         </nav>
+        </header>
 
-    </div>
     <div class="main">
         <h1 class="header">Sign Up For Free</h1>
         <form action="#" method="post" class="form-box">
@@ -57,14 +53,29 @@
             <div class="inp-row">
                 <input type="checkbox" class="agree"><label class="agree" for="agree">I agree with the terms and conditions</label>
             </div>
-            <input type="submit" class="sub-btn" name="submit" value="Sign In">
+            <input type="button" class="sub-btn" name="submit" value="Sign Up" onclick="window.open('see-menu.html', target = '_self')"><br>
+            <a class="sign-btn" href="signIn.html">Have an account? Click here</a>
         </form>
     </div>
 
+   <footer class="footsy">
+        <nav>
+            <ul class="bottom-nav">
+                <li class="footer-nav"><a href="caterer-sign-in.html">Caterer</a></li>
+            </ul>
+        </nav>
+    </footer>
+
     <script>
-        $('.handle').on('click', function() {
-            $('nav ul').toggleClass('showing');
-        })
+        function dropdownMenu() {
+            let x = document.getElementById("nav-bar");
+            if (x.className === "topnav"){
+                x.className += " responsive";
+                /*change topnav to topnav.responsive*/
+            } else {
+                x.className = "topnav";
+            }
+        }
     </script>
 
 </body>

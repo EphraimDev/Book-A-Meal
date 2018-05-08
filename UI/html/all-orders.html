@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Set Menu</title>
+    <title>All orders</title>
     <link rel="stylesheet" type="text/css" href="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\css\index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
@@ -23,28 +23,40 @@
         </nav>
         </header>
     
-<div class="main">
-            <h1 class="header">Set menu for today</h1>
-            <form action="#" method="post" class="form-box">
-                <label for="date">Select date</label>
-                <div class="inp-row">
-                    <input class="inp" type="date" name="date" placeholder="Date" required>
-                </div>
-                <label for="name">Select meal</label>
-                <div class="inp-row">
-                    <input list="meals" name="meal" class="inp"/>
-                    <datalist id="meals">
-                                  <option value="Jollof rice">
-                                  <option value="Fried rice">
-                                  <option value="Semo and vegetable">
-                                  <option value="Beans">
-                                  <option value="Spaghetti">
-                                  <option value="Yam and egg">
-                                </datalist>
-                </div>
-                <input type="button" class="sub-btn" name="submit" value="Submit" onclick="window.open('set-menu.html', target = '_self')">
-            </form>
-        </div>
+<div class="col">
+    <h2>Customer Orders</h2>
+<table>
+  <tr>
+    <th>S/N</th>
+      <th>Full Name</th>
+    <th>Meal</th>
+    <th>Units</th>
+      <th>Cost</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Status</th>
+  </tr>
+  <tr>
+    <td>001</td>
+      <td>Emeka Dele Hazzan</td>
+    <td>Fried rice and chicken</td>
+    <td>1</td>
+      <td>1000</td>
+      <td>12/28/2005</td>
+      <td>14:30</td>
+      <td>Canceled</td>
+  </tr>
+  <tr>
+    <td>002</td>
+      <td>Wale Ebuka Yusuf</td>
+    <td>Eba and ewedu with fish</td>
+    <td>2</td>
+      <td>1800</td>
+      <td>12/28/2005</td>
+      <td>16:30</td>
+      <td>Delivered</td>
+  </tr>
+</table>
     
     <footer class="footsy">
         <nav>
@@ -64,7 +76,6 @@
                 x.className = "topnav";
             }
         }
-
     </script>
 
 </body>

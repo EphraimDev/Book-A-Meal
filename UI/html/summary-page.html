@@ -5,7 +5,7 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <meta http-equiv="X-UA-Compatible" content="ie=edge">
-    <title>Set Menu</title>
+    <title>Summary Page</title>
     <link rel="stylesheet" type="text/css" href="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\css\index.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
 </head>
@@ -23,28 +23,44 @@
         </nav>
         </header>
     
-<div class="main">
-            <h1 class="header">Set menu for today</h1>
-            <form action="#" method="post" class="form-box">
-                <label for="date">Select date</label>
-                <div class="inp-row">
-                    <input class="inp" type="date" name="date" placeholder="Date" required>
+<div class="col">
+    <h2>Customer Orders</h2>
+<table>
+  <tr>
+    <th>S/N</th>
+      <th>Full Name</th>
+    <th>Meal</th>
+      <th>Date</th>
+      <th>Status</th>
+  </tr>
+  <tr>
+    <td>001</td>
+      <td>Emeka Dele Hazzan</td>
+    <td>Fried rice and chicken</td>
+      <td>12/28/2005</td>
+      <td>Canceled</td>
+  </tr>
+  <tr>
+    <td>002</td>
+      <td>Wale Ebuka Yusuf</td>
+    <td>Eba and ewedu with fish</td>
+      <td>12/28/2005</td>
+      <td>Delivered</td>
+  </tr>
+</table><br>
+    <a href="all-orders.html">>>>See details of all orders</a>
+    </div>
+    
+    <div>
+        <div class="col">
+            <div class="card">
+                <div class="container">
+                    <h4><b>Total income for today</b></h4>
+                    <p class="price"><span>&#8358</span>300000</p>
                 </div>
-                <label for="name">Select meal</label>
-                <div class="inp-row">
-                    <input list="meals" name="meal" class="inp"/>
-                    <datalist id="meals">
-                                  <option value="Jollof rice">
-                                  <option value="Fried rice">
-                                  <option value="Semo and vegetable">
-                                  <option value="Beans">
-                                  <option value="Spaghetti">
-                                  <option value="Yam and egg">
-                                </datalist>
-                </div>
-                <input type="button" class="sub-btn" name="submit" value="Submit" onclick="window.open('set-menu.html', target = '_self')">
-            </form>
+            </div>
         </div>
+    </div>
     
     <footer class="footsy">
         <nav>
@@ -64,7 +80,6 @@
                 x.className = "topnav";
             }
         }
-
     </script>
 
 </body>
