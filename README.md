@@ -1,5 +1,7 @@
 [![Build Status](https://travis-ci.org/EphraimDev/Book-A-Meal.svg?branch=157277758-ft-server-GET-meals)](https://travis-ci.org/EphraimDev/Book-A-Meal)
 
+[![Coverage Status](https://coveralls.io/repos/github/EphraimDev/Book-A-Meal/badge.svg?branch=master)](https://coveralls.io/github/EphraimDev/Book-A-Meal?branch=master)
+
 Book A Meal
 
 This application was developed to enable customers place orders for their favorite meals online, see the menu for a specific day, and also allow the caterers set the menu for the day, add, remove or update a meal and see orders made by customers.
