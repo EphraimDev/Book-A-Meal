@@ -58,8 +58,7 @@
     },
     "scripts": {
         "start": "nodemon --exec babel-node app.js --presets env,stage-2",
-        "test": "cross-env NODE_ENV=test SECRET=mytestsecret nyc mocha --require babel-core/register ./test/*.test.js --recursive --timeout 50000 --exit",
-        "coverage": "nyc report --reporter=text-lcov | coveralls"
+        "test": "cross-env NODE_ENV=test nyc --reporter=lcov --reporter=text mocha --compilers js:babel-register ./test/*.test.js --recursive --timeout 50000 --exit"
     },
     "author": "ephraim",
     "license": "ISC",
