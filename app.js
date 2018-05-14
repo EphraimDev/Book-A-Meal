@@ -2,10 +2,10 @@ import express from 'express';
 import logger from "morgan";
 import bodyParser from 'body-parser';
 
-import router from './routes/index.js';
-import menuRouter from './routes/menu';
-import mealRouter from './routes/meal';
-import orderRouter from './routes/orders';
+import router from './src/routes/index';
+import menuRouter from './src/routes/menu';
+import mealRouter from './src/routes/meal';
+import orderRouter from './src/routes/orders';
 
 /* import userRouter from './routes/users';
 // import catererRouter from './routes/caterer'; */
