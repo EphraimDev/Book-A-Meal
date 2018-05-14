@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/EphraimDev/Book-A-Meal.svg?branch=157277758-ft-server-GET-meals)](https://travis-ci.org/EphraimDev/Book-A-Meal) [![Coverage Status](https://coveralls.io/repos/github/EphraimDev/Book-A-Meal/badge.svg?branch=157277758-ft-server-GET-meals)](https://coveralls.io/github/EphraimDev/Book-A-Meal?branch=157277758-ft-server-GET-meals)
+[![Build Status](https://travis-ci.org/EphraimDev/Book-A-Meal.svg?branch=157277758-ft-server-GET-meals)](https://travis-ci.org/EphraimDev/Book-A-Meal) [![Coverage Status](https://coveralls.io/repos/github/EphraimDev/Book-A-Meal/badge.svg?branch=157277758-ft-server-GET-meals)](https://coveralls.io/github/EphraimDev/Book-A-Meal?branch=157277758-ft-server-GET-meals) [![Maintainability](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/maintainability)](https://codeclimate.com/github/codeclimate/codeclimate/maintainability) [![Test Coverage](https://api.codeclimate.com/v1/badges/a99a88d28ad37a79dbf6/test_coverage)](https://codeclimate.com/github/codeclimate/codeclimate/test_coverage)
 
 Book A Meal
 
