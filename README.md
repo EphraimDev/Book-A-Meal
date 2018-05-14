@@ -1,4 +1,4 @@
-[![Build Status](https://travis-ci.org/EphraimDev/Book-A-Meal.svg?branch=157277758-ft-server-GET-meals)](https://travis-ci.org/EphraimDev/Book-A-Meal) [![Coverage Status](https://coveralls.io/repos/github/EphraimDev/Book-A-Meal/badge.svg?branch=master)](https://coveralls.io/github/EphraimDev/Book-A-Meal?branch=master)
+[![Build Status](https://travis-ci.org/EphraimDev/Book-A-Meal.svg?branch=157277758-ft-server-GET-meals)](https://travis-ci.org/EphraimDev/Book-A-Meal) [![Coverage Status](https://coveralls.io/repos/github/EphraimDev/Book-A-Meal/badge.svg?branch=157277758-ft-server-GET-meals)](https://coveralls.io/github/EphraimDev/Book-A-Meal?branch=157277758-ft-server-GET-meals)
 
 Book A Meal
 
