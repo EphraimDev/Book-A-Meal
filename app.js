@@ -2,13 +2,15 @@ import express from 'express';
 import logger from "morgan";
 import bodyParser from 'body-parser';
 
-import router from './routes/index';
-import menuRouter from './routes/menu';
-import mealRouter from './routes/meal';
-import orderRouter from './routes/orders';
+import router from './src/routes/index';
+import menuRouter from './src/routes/menu';
+import mealRouter from './src/routes/meal';
+import orderRouter from './src/routes/orders';
 
 /* import userRouter from './routes/users';
 // import catererRouter from './routes/caterer'; */
+
+// Set environment port
 
 // set up the express app
 const app = express();
@@ -27,7 +29,7 @@ app.use(orderRouter);
 /* app.use(userRouter);
 app.use(catererRouter);*/
 
-const PORT = 5000;
+const PORT = process.env.PORT || 5000;
 
 app.listen(PORT, () => {
     console.log(`server running on port ${PORT}`);
