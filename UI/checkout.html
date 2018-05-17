@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Checkout</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\css\index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="topnav" id="nav-bar">
+                    <li><a href="see-menu.html">Home</a></li>
+                <li><a href="my-orders.html">My Orders</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="dropdown-icon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776</a></li>
+            </ul>
+        </nav>
+        </header>
+
+    <div class="main">
+        <h1 class="header">Confirm your order</h1>
+        <form action="#" method="post" class="form-box">
+            <label for="meal">Meal</label>
+            <div class="inp-row">
+                <input class="inp" type="text" name="meal" placeholder="Fried Rice and chicken" readonly>
+            </div>
+            <label for="name">Full Name</label>
+            <div class="inp-row">
+                <input class="inp" type="text" name="name" placeholder="Alabi Akeem" readonly>
+            </div>
+            <label for="name">Address</label>
+            <div class="inp-row">
+                <input class="inp" type="text" name="name" placeholder="Enter Last Name" required>
+            </div>
+            <label for="number">Phone Number</label>
+            <div class="inp-row">
+                <input class="inp" type="number" name="number" placeholder="07066666666" readonly>
+            </div>
+            <label for="email">Email</label>
+            <div class="inp-row">
+                <input class="inp" type="email" name="email" placeholder="ask@gmail.com" readonly>
+            </div>
+            <label for="number">Unit</label>
+            <div class="inp-row">
+                <input class="inp" type="number" name="number" placeholder="Enter number of units ordered" required>
+            </div>
+            <label for="number">Amount</label>
+            <div class="inp-row">
+                <input class="inp" type="number" name="number" placeholder="4000" readonly>
+            </div>
+            <div class="inp-row">
+                <input type="checkbox" class="agree"><label class="agree" for="agree">I agree with the terms and conditions</label>
+            </div>
+            <input type="submit" class="sub-btn" name="submit" value="Submit" onclick="window.open('confirmation-page.html', target = '_self')"><br>
+        </form>
+    </div>
+
+   <footer class="footsy">
+        <nav>
+            <ul class="bottom-nav">
+                <li class="footer-nav"><a href="caterer-sign-in.html">Caterer</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        function dropdownMenu() {
+            let x = document.getElementById("nav-bar");
+            if (x.className === "topnav"){
+                x.className += " responsive";
+                /*change topnav to topnav.responsive*/
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
