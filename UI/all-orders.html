@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>All orders</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\css\index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="topnav" id="nav-bar">
+                    <li><a href="summary-page.html">Summary</a></li>
+                <li><a href="all-orders.html">Orders</a></li>
+                <li><a href="set-menu.html">Menu</a></li>
+                <li><a href="meals.html">Meals</a></li>
+                <li class="dropdown-icon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776</a></li>
+            </ul>
+        </nav>
+        </header>
+    
+<div class="col">
+    <h2>Customer Orders</h2>
+<table>
+  <tr>
+    <th>S/N</th>
+      <th>Full Name</th>
+    <th>Meal</th>
+    <th>Units</th>
+      <th>Cost</th>
+      <th>Date</th>
+      <th>Time</th>
+      <th>Status</th>
+  </tr>
+  <tr>
+    <td>001</td>
+      <td>Emeka Dele Hazzan</td>
+    <td>Fried rice and chicken</td>
+    <td>1</td>
+      <td>1000</td>
+      <td>12/28/2005</td>
+      <td>14:30</td>
+      <td>Canceled</td>
+  </tr>
+  <tr>
+    <td>002</td>
+      <td>Wale Ebuka Yusuf</td>
+    <td>Eba and ewedu with fish</td>
+    <td>2</td>
+      <td>1800</td>
+      <td>12/28/2005</td>
+      <td>16:30</td>
+      <td>Delivered</td>
+  </tr>
+</table>
+    
+    <footer class="footsy">
+        <nav>
+            <ul class="bottom-nav">
+                <li class="footer-nav"><a href="caterer-sign-in.html">Caterer</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        function dropdownMenu() {
+            let x = document.getElementById("nav-bar");
+            if (x.className === "topnav"){
+                x.className += " responsive";
+                /*change topnav to topnav.responsive*/
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>

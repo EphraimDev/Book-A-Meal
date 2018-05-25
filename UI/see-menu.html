@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Menu</title>
+    <link rel="stylesheet" type="text/css" href="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\css\index.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+</head>
+
+<body>
+    <header>
+        <nav>
+            <ul class="topnav" id="nav-bar">
+                    <li><a href="see-menu.html">Home</a></li>
+                <li><a href="my-orders.html">My Orders</a></li>
+                <li><a href="contact.html">Contact Us</a></li>
+                <li class="dropdown-icon"><a href="javascript:void(0);" onclick="dropdownMenu()">&#9776</a></li>
+            </ul>
+        </nav>
+        </header>
+
+    <div>
+        <div class="col">
+            <div class="card">
+                <img src="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\images\fried-2509080_1280.jpg" alt="Fried rice and chicken">
+                <div class="container">
+                    <h4><b>Fried rice and chicken</b></h4>
+                    <p class="price"><span>&#8358</span>800</p>
+                </div>
+                <div>
+                    <button class="btn"><a href="checkout.html">Order now</a></button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\images\okrosoup.jpg" alt="Eba and okro soup with beef" style="width:100%">
+                <div class="container">
+                    <h4><b>Eba and okro soup</b></h4>
+                    <p class="price"><span>&#8358</span>1000</p>
+                </div>
+                <div>
+                    <button class="btn"><a href="checkout.html">Order now</a></button>
+                </div>
+            </div>
+            <div class="card">
+                <img src="C:\Users\EPHRAIM\Desktop\Book-A-Meal\book-a-meal\Book-A-Meal\UI\images\porridge-beans.jpg" alt="Beans and plantain" style="width:100%">
+                <div class="container">
+                    <h4><b>Beans and plantain</b></h4>
+                    <p class="price"><span>&#8358</span>500</p>
+                </div>
+                <div>
+                    <button class="btn"><a href="checkout.html">Order now</a></button>
+                </div>
+            </div>
+        </div>
+    </div>
+    
+    <footer class="footsy">
+        <nav>
+            <ul class="bottom-nav">
+                <li class="footer-nav"><a href="caterer-sign-in.html">Caterer</a></li>
+            </ul>
+        </nav>
+    </footer>
+
+    <script>
+        function dropdownMenu() {
+            let x = document.getElementById("nav-bar");
+            if (x.className === "topnav"){
+                x.className += " responsive";
+                /*change topnav to topnav.responsive*/
+            } else {
+                x.className = "topnav";
+            }
+        }
+    </script>
+
+</body>
+
+</html>
