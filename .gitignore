@@ -1,0 +1,6 @@
+node_modules/
+.eslintrc
+fabric8-analytics.log
+bin/
+.nyc_output/
+coverage/
